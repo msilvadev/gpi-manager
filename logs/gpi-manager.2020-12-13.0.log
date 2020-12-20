@@ -1,0 +1,1009 @@
+01:56:07.475  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+02:05:30.275  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 14646 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+02:05:30.277  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+02:05:32.921  INFO [main] b.c.g.s.DashboardReportServiceImpl:45 - Initialize Dashboard Report Cache...
+02:05:32.956  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Dashboard Report Cache loaded in 34 ms
+02:05:32.957  INFO [main] b.c.g.s.DashboardReportServiceImpl:53 - Load 2 Dashboard Report Cache
+02:05:33.388  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.828 seconds (JVM running for 4.465)
+02:05:33.602  INFO [main] b.c.g.c.StartupConfiguration:42 - Load json data to test...
+02:05:33.604  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+02:14:02.350  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+02:15:53.197  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 15234 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+02:15:53.199  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+02:15:56.103  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Initialize Dashboard Report Cache...
+02:15:56.141  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 38 ms
+02:15:56.142  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:15:56.621  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 4.049 seconds (JVM running for 4.85)
+02:15:56.806  INFO [main] b.c.g.c.StartupConfiguration:42 - Load json data to test...
+02:15:56.807  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+02:17:13.655  INFO [http-nio-8090-exec-3] b.c.g.s.DashboardReportServiceImpl:43 - Initialize Dashboard Report Cache...
+02:17:13.682  INFO [http-nio-8090-exec-3] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 27 ms
+02:17:13.683  INFO [http-nio-8090-exec-3] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:20:45.610  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+02:20:50.475  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 15588 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+02:20:50.478  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+02:20:53.447  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Initialize Dashboard Report Cache...
+02:20:53.482  INFO [pool-1-thread-1] b.c.g.s.DashboardReportServiceImpl:83 - Report Generated to put into cache -> DashboardReportDto{initiatedQuantity=0, processingQuantity=0, successQuantity=0, overdueQuantity=0, failedQuantity=0}
+02:20:53.486  INFO [pool-1-thread-1] b.c.g.s.DashboardReportServiceImpl:83 - Report Generated to put into cache -> DashboardReportDto{initiatedQuantity=0, processingQuantity=0, successQuantity=0, overdueQuantity=0, failedQuantity=0}
+02:20:53.487  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 40 ms
+02:20:53.487  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:20:53.957  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 4.084 seconds (JVM running for 4.674)
+02:20:54.134  INFO [main] b.c.g.c.StartupConfiguration:42 - Load json data to test...
+02:20:54.135  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+02:24:30.654  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+02:24:34.763  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 15821 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+02:24:34.765  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+02:24:37.443  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Initialize Dashboard Report Cache...
+02:24:37.475  INFO [pool-1-thread-1] b.c.g.s.DashboardReportServiceImpl:83 - Report Generated to put into cache -> DashboardReportDto{initiatedQuantity=0, processingQuantity=0, successQuantity=0, overdueQuantity=0, failedQuantity=0}
+02:24:37.479  INFO [pool-1-thread-1] b.c.g.s.DashboardReportServiceImpl:83 - Report Generated to put into cache -> DashboardReportDto{initiatedQuantity=0, processingQuantity=0, successQuantity=0, overdueQuantity=0, failedQuantity=0}
+02:24:37.479  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 36 ms
+02:24:37.479  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:24:37.903  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.597 seconds (JVM running for 4.25)
+02:24:38.117  INFO [main] b.c.g.c.StartupConfiguration:45 - Load json data to test...
+02:24:38.118  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+02:27:24.334  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+02:27:28.801  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 16128 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+02:27:28.802  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+02:27:31.992  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.719 seconds (JVM running for 4.309)
+02:27:32.086  INFO [main] b.c.g.c.StartupConfiguration:42 - Load json data to test...
+02:27:32.086  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+02:27:32.116  INFO [pool-1-thread-1] b.c.g.s.DashboardReportServiceImpl:83 - Report Generated to put into cache -> DashboardReportDto{initiatedQuantity=1, processingQuantity=1, successQuantity=1, overdueQuantity=1, failedQuantity=1}
+02:27:32.121  INFO [pool-1-thread-1] b.c.g.s.DashboardReportServiceImpl:83 - Report Generated to put into cache -> DashboardReportDto{initiatedQuantity=1, processingQuantity=1, successQuantity=1, overdueQuantity=0, failedQuantity=0}
+02:27:32.121  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 35 ms
+02:27:32.121  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:27:32.122  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+02:28:51.439  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+02:28:56.048  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 16347 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+02:28:56.052  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+02:28:59.413  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.859 seconds (JVM running for 4.441)
+02:28:59.516  INFO [main] b.c.g.c.StartupConfiguration:41 - Load json data to test...
+02:28:59.517  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+02:28:59.703  INFO [pool-1-thread-1] b.c.g.s.DashboardReportServiceImpl:83 - Report Generated to put into cache -> DashboardReportDto{initiatedQuantity=1, processingQuantity=1, successQuantity=1, overdueQuantity=1, failedQuantity=1}
+02:28:59.708  INFO [pool-1-thread-1] b.c.g.s.DashboardReportServiceImpl:83 - Report Generated to put into cache -> DashboardReportDto{initiatedQuantity=1, processingQuantity=1, successQuantity=1, overdueQuantity=0, failedQuantity=0}
+02:28:59.708  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 191 ms
+02:28:59.708  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:28:59.709  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+02:29:28.647  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+02:29:32.848  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 16495 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+02:29:32.849  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+02:29:36.016  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.786 seconds (JVM running for 4.435)
+02:29:36.105  INFO [main] b.c.g.c.StartupConfiguration:41 - Load json data to test...
+02:29:36.105  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+02:29:36.247  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 142 ms
+02:29:36.248  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:29:36.249  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+02:30:16.803  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+02:30:20.778  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 16648 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+02:30:20.780  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+02:30:23.955  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.818 seconds (JVM running for 4.405)
+02:30:24.041  INFO [main] b.c.g.c.StartupConfiguration:41 - Load json with mock data to test!
+02:30:24.041  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+02:30:24.174  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 133 ms
+02:30:24.175  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:30:24.176  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+02:31:05.278  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+02:31:09.188  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 16799 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+02:31:09.189  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+02:31:12.286  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.707 seconds (JVM running for 4.318)
+02:31:12.371  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+02:31:12.550  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 179 ms
+02:31:12.551  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:31:12.551  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+02:31:12.552  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+02:31:18.593  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+02:31:24.271  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 16927 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+02:31:24.272  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+02:31:27.615  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.79 seconds (JVM running for 4.404)
+02:31:27.713  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+02:31:27.897  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 183 ms
+02:31:27.899  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:31:27.899  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+02:31:27.900  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+02:32:44.844  INFO [http-nio-8090-exec-3] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+02:32:44.871  INFO [http-nio-8090-exec-3] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 27 ms
+02:32:44.871  INFO [http-nio-8090-exec-3] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:32:48.254  INFO [http-nio-8090-exec-4] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+02:32:48.279  INFO [http-nio-8090-exec-4] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 24 ms
+02:32:48.279  INFO [http-nio-8090-exec-4] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:32:49.413  INFO [http-nio-8090-exec-5] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+02:32:49.424  INFO [http-nio-8090-exec-5] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 11 ms
+02:32:49.424  INFO [http-nio-8090-exec-5] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:45:32.464  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+02:45:36.662  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 17990 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+02:45:36.663  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+02:45:39.871  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.807 seconds (JVM running for 4.549)
+02:45:39.954  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+02:45:40.089  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 134 ms
+02:45:40.091  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+02:45:40.091  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+02:45:40.092  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+02:54:51.927  INFO [http-nio-8090-exec-7] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+02:54:51.943  INFO [http-nio-8090-exec-7] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 16 ms
+02:54:51.943  INFO [http-nio-8090-exec-7] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+03:02:37.924  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+03:03:16.120  INFO [main] b.c.g.GpiManagerApplicationTests:55 - Starting GpiManagerApplicationTests using Java 1.8.0_272 on msilvadev with PID 18788 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:03:16.122  INFO [main] b.c.g.GpiManagerApplicationTests:664 - The following profiles are active: dev
+03:03:21.652  INFO [main] b.c.g.GpiManagerApplicationTests:61 - Started GpiManagerApplicationTests in 6.137 seconds (JVM running for 10.048)
+03:03:21.857  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+03:03:21.949  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 92 ms
+03:03:21.951  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+03:03:21.951  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:03:21.982  INFO [main] b.c.gpimanager.GpiManagerApplication:15 - Initializing GpiManagerApplication Application...
+03:03:22.032  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 18788 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:03:22.033  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+03:03:23.199  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 1.214 seconds (JVM running for 11.595)
+03:03:23.215  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+03:03:23.228  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 12 ms
+03:03:23.229  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+03:03:23.229  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:03:23.230  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+03:03:23.399  WARN [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:137 - SQL Error: 90121, SQLState: 90121
+03:03:23.401 ERROR [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:142 - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03:03:23.402  WARN [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:137 - SQL Error: 90121, SQLState: 90121
+03:03:23.402 ERROR [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:142 - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03:03:23.402  WARN [SpringContextShutdownHook] o.s.b.f.s.DisposableBeanAdapter:267 - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+03:04:27.273  INFO [main] b.c.g.GpiManagerApplicationTests:55 - Starting GpiManagerApplicationTests using Java 1.8.0_272 on msilvadev with PID 18937 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:04:27.275  INFO [main] b.c.g.GpiManagerApplicationTests:664 - The following profiles are active: dev
+03:04:31.750  INFO [main] b.c.g.GpiManagerApplicationTests:61 - Started GpiManagerApplicationTests in 4.839 seconds (JVM running for 8.861)
+03:04:31.911  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+03:04:31.967  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 55 ms
+03:04:31.969  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+03:04:31.970  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:04:32.004  INFO [main] b.c.gpimanager.GpiManagerApplication:15 - Initializing GpiManagerApplication Application...
+03:04:32.042  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 18937 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:04:32.042  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+03:04:33.159  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 1.151 seconds (JVM running for 10.27)
+03:04:33.177  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+03:04:33.189  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 12 ms
+03:04:33.189  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+03:04:33.189  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:04:33.190  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+03:04:33.314  WARN [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:137 - SQL Error: 90121, SQLState: 90121
+03:04:33.315 ERROR [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:142 - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03:04:33.315  WARN [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:137 - SQL Error: 90121, SQLState: 90121
+03:04:33.316 ERROR [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:142 - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03:04:33.316  WARN [SpringContextShutdownHook] o.s.b.f.s.DisposableBeanAdapter:267 - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+03:05:43.067  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 19071 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:05:43.071  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+03:05:46.064  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.5 seconds (JVM running for 4.074)
+03:05:46.174  INFO [main] b.c.g.s.DashboardReportServiceImpl:43 - Loading Dashboard Report Cache...
+03:05:46.339  INFO [main] b.c.g.s.DashboardReportServiceImpl:49 - Dashboard Report Cache loaded in 165 ms
+03:05:46.340  INFO [main] b.c.g.s.DashboardReportServiceImpl:51 - Load 2 Dashboard Report Cache
+03:05:46.341  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:05:46.341  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+03:36:08.691  INFO [main] b.c.g.GpiManagerApplicationTests:55 - Starting GpiManagerApplicationTests using Java 1.8.0_272 on msilvadev with PID 20428 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:36:08.692  INFO [main] b.c.g.GpiManagerApplicationTests:664 - The following profiles are active: dev
+03:36:13.742  INFO [main] b.c.g.GpiManagerApplicationTests:61 - Started GpiManagerApplicationTests in 5.622 seconds (JVM running for 7.888)
+03:36:13.929  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+03:36:14.012  INFO [main] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 82 ms
+03:36:14.014  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+03:36:14.014  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:36:14.045  INFO [main] b.c.gpimanager.GpiManagerApplication:15 - Initializing GpiManagerApplication Application...
+03:36:14.071  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 20428 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:36:14.071  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+03:36:15.161  WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:596 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8090 is already in use
+03:36:15.207 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter:40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+03:36:33.867  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+03:36:48.765  INFO [main] b.c.g.GpiManagerApplicationTests:55 - Starting GpiManagerApplicationTests using Java 1.8.0_272 on msilvadev with PID 20523 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:36:48.783  INFO [main] b.c.g.GpiManagerApplicationTests:664 - The following profiles are active: dev
+03:36:53.307  INFO [main] b.c.g.GpiManagerApplicationTests:61 - Started GpiManagerApplicationTests in 5.041 seconds (JVM running for 7.621)
+03:36:53.496  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+03:36:53.569  INFO [main] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 72 ms
+03:36:53.571  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+03:36:53.572  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:36:53.602  INFO [main] b.c.gpimanager.GpiManagerApplication:15 - Initializing GpiManagerApplication Application...
+03:36:53.628  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 20523 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:36:53.629  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+03:36:54.626  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 1.021 seconds (JVM running for 8.94)
+03:36:54.642  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+03:36:54.657  INFO [main] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 13 ms
+03:36:54.657  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+03:36:54.657  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:36:54.658  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+03:36:54.814  WARN [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:137 - SQL Error: 90121, SQLState: 90121
+03:36:54.815 ERROR [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:142 - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03:36:54.816  WARN [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:137 - SQL Error: 90121, SQLState: 90121
+03:36:54.816 ERROR [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:142 - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03:36:54.817  WARN [SpringContextShutdownHook] o.s.b.f.s.DisposableBeanAdapter:267 - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+03:38:44.678  INFO [main] b.c.g.GpiManagerApplicationTests:55 - Starting GpiManagerApplicationTests using Java 1.8.0_272 on msilvadev with PID 20658 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:38:44.680  INFO [main] b.c.g.GpiManagerApplicationTests:664 - The following profiles are active: dev
+03:38:49.090  INFO [main] b.c.g.GpiManagerApplicationTests:61 - Started GpiManagerApplicationTests in 4.85 seconds (JVM running for 7.639)
+03:38:49.279  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+03:38:49.372  INFO [main] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 92 ms
+03:38:49.374  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+03:38:49.374  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:38:49.399  INFO [main] b.c.gpimanager.GpiManagerApplication:15 - Initializing GpiManagerApplication Application...
+03:38:49.431  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 20658 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:38:49.431  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+03:38:50.475  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 1.074 seconds (JVM running for 9.025)
+03:38:50.492  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+03:38:50.505  INFO [main] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 12 ms
+03:38:50.505  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+03:38:50.505  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:38:50.506  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+03:38:50.632  WARN [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:137 - SQL Error: 90121, SQLState: 90121
+03:38:50.632 ERROR [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:142 - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03:38:50.633  WARN [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:137 - SQL Error: 90121, SQLState: 90121
+03:38:50.634 ERROR [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:142 - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03:38:50.636  WARN [SpringContextShutdownHook] o.s.b.f.s.DisposableBeanAdapter:267 - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+03:39:00.396  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 20752 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:39:00.398  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+03:39:03.629  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.912 seconds (JVM running for 4.641)
+03:39:03.719  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+03:39:03.907  INFO [main] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 188 ms
+03:39:03.908  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+03:39:03.908  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:39:03.909  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+03:39:56.996  INFO [http-nio-8090-exec-3] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+03:39:57.012  INFO [http-nio-8090-exec-3] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 14 ms
+03:39:57.012  INFO [http-nio-8090-exec-3] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+03:39:58.749  INFO [http-nio-8090-exec-4] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+03:39:58.761  INFO [http-nio-8090-exec-4] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 11 ms
+03:39:58.761  INFO [http-nio-8090-exec-4] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+03:40:06.494  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+03:40:11.431  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 20920 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:40:11.433  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+03:40:15.035  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 4.08 seconds (JVM running for 4.653)
+03:40:15.145  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+03:40:15.330  INFO [main] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 184 ms
+03:40:15.331  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+03:40:15.332  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:40:15.332  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+03:52:11.255  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+03:52:15.382  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 21592 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:52:15.387  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+03:52:18.641  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.978 seconds (JVM running for 4.592)
+03:52:18.727  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+03:52:18.857  INFO [main] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 130 ms
+03:52:18.858  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+03:52:18.859  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:52:18.859  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+03:55:05.520  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+03:55:09.370  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 21829 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:55:09.371  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+03:55:12.574  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.874 seconds (JVM running for 4.47)
+03:55:12.665  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+03:55:12.804  INFO [main] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 139 ms
+03:55:12.805  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+03:55:12.806  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:55:12.806  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+03:58:43.167  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+03:58:47.087  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 22274 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+03:58:47.089  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+03:58:50.291  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.63 seconds (JVM running for 4.156)
+03:58:50.379  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+03:58:50.508  INFO [main] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 129 ms
+03:58:50.509  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+03:58:50.509  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+03:58:50.510  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+04:00:49.397  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+04:00:56.457  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 22469 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+04:00:56.460  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+04:00:59.707  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.703 seconds (JVM running for 4.192)
+04:00:59.815  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:00:59.950  INFO [main] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 135 ms
+04:00:59.951  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+04:00:59.951  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+04:00:59.952  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+04:01:44.168  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+04:01:46.981  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 22621 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+04:01:46.984  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+04:01:50.482  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.95 seconds (JVM running for 4.487)
+04:01:50.566  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:01:50.741  INFO [main] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 175 ms
+04:01:50.742  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+04:01:50.743  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+04:01:50.743  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+04:02:21.257  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+04:02:24.623  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 22770 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+04:02:24.624  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+04:02:28.079  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 4.074 seconds (JVM running for 4.722)
+04:02:28.164  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:02:28.319  INFO [main] b.c.g.s.DashboardReportServiceImpl:50 - Dashboard Report Cache loaded in 155 ms
+04:02:28.321  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Load 2 Dashboard Report Cache
+04:02:28.321  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+04:02:28.321  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+04:04:24.382  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+04:04:28.570  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 23003 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+04:04:28.572  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+04:04:31.725  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.556 seconds (JVM running for 4.194)
+04:04:31.811  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:04:31.965  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 154 ms
+04:04:31.966  INFO [main] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+04:04:31.967  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+04:04:31.967  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+04:04:54.075  INFO [http-nio-8090-exec-5] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:04:54.090  INFO [http-nio-8090-exec-5] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 14 ms
+04:04:54.090  INFO [http-nio-8090-exec-5] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+04:04:56.068  INFO [http-nio-8090-exec-6] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:04:56.081  INFO [http-nio-8090-exec-6] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 12 ms
+04:04:56.081  INFO [http-nio-8090-exec-6] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+04:04:57.034  INFO [http-nio-8090-exec-7] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:04:57.058  INFO [http-nio-8090-exec-7] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 24 ms
+04:04:57.058  INFO [http-nio-8090-exec-7] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+04:04:57.746  INFO [http-nio-8090-exec-8] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:04:57.756  INFO [http-nio-8090-exec-8] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 10 ms
+04:04:57.756  INFO [http-nio-8090-exec-8] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+04:04:58.474  INFO [http-nio-8090-exec-9] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:04:58.500  INFO [http-nio-8090-exec-9] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 25 ms
+04:04:58.500  INFO [http-nio-8090-exec-9] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+04:04:58.861  INFO [http-nio-8090-exec-10] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:04:58.879  INFO [http-nio-8090-exec-10] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 16 ms
+04:04:58.879  INFO [http-nio-8090-exec-10] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+04:04:59.235  INFO [http-nio-8090-exec-1] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:04:59.248  INFO [http-nio-8090-exec-1] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 13 ms
+04:04:59.248  INFO [http-nio-8090-exec-1] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+04:06:09.340  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+04:06:57.658  INFO [main] b.c.g.GpiManagerApplicationTests:55 - Starting GpiManagerApplicationTests using Java 1.8.0_272 on msilvadev with PID 23213 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+04:06:57.660  INFO [main] b.c.g.GpiManagerApplicationTests:664 - The following profiles are active: dev
+04:07:02.089  INFO [main] b.c.g.GpiManagerApplicationTests:61 - Started GpiManagerApplicationTests in 4.786 seconds (JVM running for 8.621)
+04:07:02.550  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:07:02.655  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 99 ms
+04:07:02.656  INFO [main] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+04:07:02.657  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+04:07:02.678  INFO [main] b.c.gpimanager.GpiManagerApplication:15 - Initializing GpiManagerApplication Application...
+04:07:02.714  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 23213 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+04:07:02.714  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+04:07:03.875  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 1.194 seconds (JVM running for 10.407)
+04:07:03.894  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:07:03.905  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 10 ms
+04:07:03.906  INFO [main] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+04:07:03.906  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+04:07:03.907  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+04:07:04.072  WARN [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:137 - SQL Error: 90121, SQLState: 90121
+04:07:04.073 ERROR [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:142 - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+04:07:04.074  WARN [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:137 - SQL Error: 90121, SQLState: 90121
+04:07:04.074 ERROR [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:142 - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+04:07:04.075  WARN [SpringContextShutdownHook] o.s.b.f.s.DisposableBeanAdapter:267 - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+04:10:54.026  INFO [main] b.c.g.GpiManagerApplicationTests:55 - Starting GpiManagerApplicationTests using Java 1.8.0_272 on msilvadev with PID 23409 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+04:10:54.028  INFO [main] b.c.g.GpiManagerApplicationTests:664 - The following profiles are active: dev
+04:10:58.666  INFO [main] b.c.g.GpiManagerApplicationTests:61 - Started GpiManagerApplicationTests in 4.969 seconds (JVM running for 9.004)
+04:10:58.857  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:10:58.915  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 57 ms
+04:10:58.917  INFO [main] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+04:10:58.917  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+04:10:58.943  INFO [main] b.c.gpimanager.GpiManagerApplication:15 - Initializing GpiManagerApplication Application...
+04:10:58.994  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 23409 (started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+04:10:58.995  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+04:10:59.976  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 1.03 seconds (JVM running for 10.313)
+04:10:59.992  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:11:00.004  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 11 ms
+04:11:00.005  INFO [main] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+04:11:00.005  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+04:11:00.005  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+04:11:00.174  WARN [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:137 - SQL Error: 90121, SQLState: 90121
+04:11:00.178 ERROR [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:142 - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+04:11:00.178  WARN [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:137 - SQL Error: 90121, SQLState: 90121
+04:11:00.179 ERROR [SpringContextShutdownHook] o.h.e.jdbc.spi.SqlExceptionHelper:142 - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+04:11:00.179  WARN [SpringContextShutdownHook] o.s.b.f.s.DisposableBeanAdapter:267 - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+04:13:28.526  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 23589 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+04:13:28.527  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+04:13:31.320  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 3.216 seconds (JVM running for 3.732)
+04:13:31.406  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+04:13:31.650  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 244 ms
+04:13:31.651  INFO [main] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+04:13:31.651  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+04:13:31.652  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+22:08:05.314  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+22:08:09.159  INFO [main] b.c.gpimanager.GpiManagerApplication:55 - Starting GpiManagerApplication using Java 1.8.0_272 on msilvadev with PID 32539 (/home/msilvadev/Documents/workspace/sigo-backend/gpi-manager/target/classes started by msilvadev in /home/msilvadev/Documents/workspace/sigo-backend/gpi-manager)
+22:08:09.160  INFO [main] b.c.gpimanager.GpiManagerApplication:664 - The following profiles are active: dev
+22:08:12.755  INFO [main] b.c.gpimanager.GpiManagerApplication:61 - Started GpiManagerApplication in 4.109 seconds (JVM running for 4.769)
+22:08:12.860  INFO [main] b.c.g.s.DashboardReportServiceImpl:44 - Loading Dashboard Report Cache...
+22:08:13.045  INFO [main] b.c.g.s.DashboardReportServiceImpl:52 - Dashboard Report Cache loaded in 185 ms
+22:08:13.046  INFO [main] b.c.g.s.DashboardReportServiceImpl:54 - Load 2 Dashboard Report Cache
+22:08:13.046  INFO [main] b.c.g.c.StartupConfiguration:44 - Load json with mock data to test!
+22:08:13.047  INFO [main] b.c.gpimanager.GpiManagerApplication:20 - GpiManagerApplication has completed startup
+22:57:57.188  WARN [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory:509 - Could not close shared JMS Connection
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:502)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:390)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:206)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:368)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:716)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1189)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1155)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
