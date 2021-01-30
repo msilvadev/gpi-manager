@@ -1,7 +1,7 @@
 package br.com.gpimanager.controllers;
 
 import br.com.gpimanager.domains.process.IndustrialProcessDto;
-import br.com.gpimanager.services.IndustrialProcessManagerService;
+import br.com.gpimanager.services.process.IndustrialProcessManagerService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

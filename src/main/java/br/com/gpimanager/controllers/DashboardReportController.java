@@ -1,7 +1,7 @@
 package br.com.gpimanager.controllers;
 
 import br.com.gpimanager.domains.dashboard.DashboardReportDto;
-import br.com.gpimanager.services.DashboardReportService;
+import br.com.gpimanager.services.dashboard.DashboardReportService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

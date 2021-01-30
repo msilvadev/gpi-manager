@@ -1,9 +1,10 @@
-package br.com.gpimanager.services;
+package br.com.gpimanager.services.process;
 
 import br.com.gpimanager.domains.process.IndustrialProcess;
 import br.com.gpimanager.domains.process.IndustrialProcessDto;
 import br.com.gpimanager.domains.process.IndustrialProcessDtoBuilder;
 import br.com.gpimanager.domains.process.IndustrialProcessRepository;
+import br.com.gpimanager.services.dashboard.DashboardReportService;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;

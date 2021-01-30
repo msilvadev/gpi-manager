@@ -1,8 +1,8 @@
 package br.com.gpimanager.application.configuration;
 
 import br.com.gpimanager.domains.process.IndustrialProcessDto;
-import br.com.gpimanager.services.DashboardReportService;
-import br.com.gpimanager.services.IndustrialProcessManagerService;
+import br.com.gpimanager.services.dashboard.DashboardReportService;
+import br.com.gpimanager.services.process.IndustrialProcessManagerService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;

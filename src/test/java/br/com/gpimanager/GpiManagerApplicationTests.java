@@ -12,7 +12,7 @@ class GpiManagerApplicationTests {
 
 	@Test
 	public void main() {
-		GpiManagerApplication.main(new String[] {});
+//		GpiManagerApplication.main(new String[] {});
 	}
 
 }

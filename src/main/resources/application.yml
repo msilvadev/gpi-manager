@@ -16,9 +16,15 @@ spring:
   jpa:
     open-in-view: false
     database-platform:  org.hibernate.dialect.H2Dialect
-#  activemq:
-#    broker-url: tcp://localhost:61616
-#      topic: industrial.process
+
+  activemq:
+    broker:
+      url: ssl://b-345574f4-716c-41c8-b305-18c3898a183f-1.mq.us-east-2.amazonaws.com:61617
+    user: admin
+    password: admin-gpi-manager
+    queue:
+      name: gpi-process
+    in-memory: false
 
 server:
   port: 8090

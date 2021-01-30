@@ -1,6 +1,9 @@
 package br.com.gpimanager.services;
 
 import br.com.gpimanager.domains.process.*;
+import br.com.gpimanager.services.dashboard.DashboardReportService;
+import br.com.gpimanager.services.process.IndustrialProcessManagerService;
+import br.com.gpimanager.services.process.IndustrialProcessManagerServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

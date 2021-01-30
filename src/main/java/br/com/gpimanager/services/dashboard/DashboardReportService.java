@@ -1,4 +1,4 @@
-package br.com.gpimanager.services;
+package br.com.gpimanager.services.dashboard;
 
 import br.com.gpimanager.domains.dashboard.DashboardReportDto;
 import br.com.gpimanager.domains.process.IndustrialProcessDto;
