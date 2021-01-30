@@ -1,5 +1,6 @@
 package br.com.gpimanager.domains.process;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.io.Serializable;
@@ -15,7 +16,9 @@ public class IndustrialProcessDto implements Serializable {
     private int processType;
     private int processStatus;
     private String description;
+    @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
     private LocalDateTime start;
+    @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
     private LocalDateTime end;
 
     public IndustrialProcessDto(long number, int processType,

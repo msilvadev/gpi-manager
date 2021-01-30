@@ -9,7 +9,6 @@ import java.util.concurrent.ConcurrentMap;
 
 @RestController
 @RequestMapping("dashboard-report")
-@CrossOrigin(origins = "http://localhost:4200")
 public class DashboardReportController {
 
     private final DashboardReportService dashboardReportService;

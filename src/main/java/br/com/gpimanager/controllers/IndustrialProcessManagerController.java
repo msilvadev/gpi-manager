@@ -9,7 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("industrial-process")
-@CrossOrigin(origins = "http://localhost:4200")
 public class IndustrialProcessManagerController {
 
     private final IndustrialProcessManagerService service;
