@@ -5,7 +5,7 @@
 > docker build -t gpi-manager .
 
 ### Run Docker
-> docker run -p 8090:8090 -t <image id>
+> docker run -p 8090:8090 -t "image id"
 
 ### Data Base - H2 in memory
 After starting the application, you can navigate to `http://localhost:8090/h2`,
