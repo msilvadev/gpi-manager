@@ -19,7 +19,7 @@ spring:
 
   activemq:
     broker:
-      url: ssl://b-345574f4-716c-41c8-b305-18c3898a183f-1.mq.us-east-2.amazonaws.com:61617
+      url: ssl://b-99460a77-f80e-4e29-aa4f-5c7481fc4bae-1.mq.us-east-2.amazonaws.com:61617
     user: admin
     password: admin-gpi-manager
     queue:
