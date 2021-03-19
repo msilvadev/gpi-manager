@@ -26,7 +26,7 @@
       "secrets": null,
       "dockerSecurityOptions": null,
       "memory": null,
-      "memoryReservation": 983,
+      "memoryReservation": 500,
       "volumesFrom": [],
       "stopTimeout": null,
       "image": "828443184555.dkr.ecr.us-east-2.amazonaws.com/gpi-manager:latest",
@@ -55,7 +55,7 @@
   "compatibilities": [
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:828443184555:task-definition/gpi-manager:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:828443184555:task-definition/gpi-manager:4",
   "family": "gpi-manager",
   "requiresAttributes": [
     {
@@ -89,7 +89,7 @@
   ],
   "networkMode": "bridge",
   "cpu": "1024",
-  "revision": 1,
+  "revision": 4,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
